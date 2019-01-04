@@ -121,8 +121,39 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 0.8rem;
 }
 
+/* Showcase */
+#showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('img/hospital_corridor.jpeg') no-repeat center / cover;
+    height: 100vh;
+    text-align: center;
+}
+
+#showcase .showcase-text {
+    font-size: 4rem;
+    width: 100%;
+    color: rgb(0, 0, 0);
+}
+
+#showcase .secondary-btn {
+    width: 60%;
+    margin: auto;
+    background: #181818;
+    border: 1px solid #181818;
+}
+
+/* Footer */
 #main-footer {
     color: #ccc;
+    text-align: center;
+    font-size: 0.8rem;
+    padding-top: 5rem;
+}
+
+#main-footer a {
+    color: #90BCE1;
 }
 
 /* Button */
@@ -174,6 +205,42 @@ h1, h2, h3, h4, h5, h6 {
 
     #right {
         flex: 6;
+    }
+}
+
+@media(max-width: 768px) {
+    body {
+        overflow: auto;
+    }
+    
+    #left {
+        justify-content: start;
+        margin-top: 4vh;
+    }
+
+    #right {
+        display: none;
+    }
+
+    #signin .logo {
+        margin-bottom: 3vh;
+    }
+
+    #signin .logo h1 {
+        font-weight: 800;
+        font-size: 2rem;
+    }
+    
+    #signin img {
+        height: 100px;
+    }
+
+    #signin .text-input {
+        margin-bottom: 0.7rem;
+    }
+
+    #main-footer {
+        padding-top: 1rem;
     }
 }
 
