@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300');
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    background: #181818;
+    color:#fff;
+    overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#right {
+    flex: 1;
+}
+/*Sign In*/
+#signin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-bottom: 1rem;
+
+}
+
+#signin form {
+    width: 80%;
+    padding-bottom: 3rem;
+}
+
+#signin .logo {
+    margin-bottom: 8vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#signin .logo h1 {
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+#signin img {
+    animation: App-logo-spin infinite 20s linear;
+    height: 200px;
+}
+  
+#signin label {
+    font-size: 0.9rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+#signin .text-input {
+    width: 100%;
+    margin-bottom: 1.3rem;
+    border-radius: 2px;
+    background: #181818;
+    border: 1px solid #555;
+    padding: 0.5rem 1rem;
+    color: #ccc;
+    line-height: 1.3rem;
+}
+
+@keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
