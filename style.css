@@ -83,6 +83,48 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.3rem;
 }
 
+#signin .primary-btn {
+    width: 100%;
+}
+
+#signin .secondary-btn,
+.or, 
+.links {
+    width: 60%;
+}
+
+#signin .links a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+#signin .or {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.2rem;
+    align-items: center;
+}
+
+#signin .or .bar {
+    border: none;
+    flex: auto;
+    height: 1px;
+    background: #aaa;
+}
+
+#signin .or span {
+    color: #ccc;
+    padding: 0 0.8rem;
+}
+
+#main-footer {
+    color: #ccc;
+}
+
 /* Button */
 .primary-btn {
     padding: 0.7rem 1rem;
@@ -97,10 +139,6 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
     text-align: center;
     transition: all 0.7s;
-}
-
-#signin .primary-btn {
-    width: 100%;
 }
 
 .primary-btn:hover {
