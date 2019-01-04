@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300');
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto Mono', monospace;
     font-weight: 300;
@@ -77,6 +81,62 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0.5rem 1rem;
     color: #ccc;
     line-height: 1.3rem;
+}
+
+/* Button */
+.primary-btn {
+    padding: 0.7rem 1rem;
+    height: 2.7rem;
+    display: block;
+    border: 0;
+    border-radius: 2px;
+    font-weight: 500;
+    background: #90BCE1;
+    color: rgb(17, 15, 15);
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.7s;
+}
+
+#signin .primary-btn {
+    width: 100%;
+}
+
+.primary-btn:hover {
+    background-color: #5585BF;
+}
+
+.secondary-btn {
+    padding: 0.7rem 1rem;
+    height: 2.7rem;
+    display: block;
+    border: 1px solid #f4f4f4;
+    border-radius: 2px;
+    font-weight: 500;
+    background: none;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.7s;
+
+}
+.secondary-btn:hover {
+    border-color: #5585BF;
+    color: #5585BF;
+}
+
+/* Media Queries */
+
+@media(min-width: 1200px) {
+    #left {
+        flex: 4;
+    }
+
+    #right {
+        flex: 6;
+    }
 }
 
 @keyframes App-logo-spin {
